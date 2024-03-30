@@ -101,7 +101,7 @@ const Shipping = () => {
           <option value="india">India</option>
         </select>
         <input
-          type="number"
+          type="text"
           name="pincode"
           placeholder="Pincode"
           value={shippingInfo.pinCode}
