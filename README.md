@@ -1,30 +1,35 @@
-# React + TypeScript + Vite
+# Fullstack Ecommerce Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Developed a robust and scalable ecommerce platform leveraging the MERN (MongoDB, Express.js, React.js, Node.js) stack using TypeScript and Firebase for Authentication. The project aimed to provide a seamless shopping experience for users while ensuring efficient management of products and orders for administrators.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Home (List products)
+- Detail products
+- Product category
+- Cart
+- Login / Register
+- Payment
+- Sorting on the basis of different factors
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+**Server:** Node, Express
 
-- Configure the top-level `parserOptions` property like this:
+**Database:** MongoDB
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Environment Variables
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+To run this project, you will need to add the following environment variables to your .env file
+
+`DB_URL`
+`STRIPE_KEY`
+`PORT`
+
+## Feedback
+
+If you have any feedback, please reach out to me at animeshyash1912@gmail.com
+
+## Authors
+
+- [Animesh Yash](https://github.com/animeshyash)
