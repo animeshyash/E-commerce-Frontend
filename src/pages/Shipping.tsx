@@ -101,8 +101,8 @@ const Shipping = () => {
           <option value="india">India</option>
         </select>
         <input
-          type="text"
-          name="pincode"
+          type="number"
+          name="pinCode"
           placeholder="Pincode"
           value={shippingInfo.pinCode}
           onChange={changeHandler}
