@@ -1,4 +1,4 @@
-import { configureStore } from "@reduxjs/toolkit";
+import { Tuple, configureStore } from "@reduxjs/toolkit";
 import { userAPI } from "../Redux/Api/User";
 import { userReducer } from "../Redux/Reducer/User";
 import { productAPI } from "../Redux/Api/Product";
@@ -17,13 +17,14 @@ export const store = configureStore({
     [userReducer.name]: userReducer.reducer,
     [cartReducer.name]: cartReducer.reducer,
   },
-  middleware: (mid) => [
-    ...mid(),
-    userAPI.middleware,
-    productAPI.middleware,
-    orderApi.middleware,
-    dashboardApi.middleware,
-  ],
+  middleware: (mid) =>
+    new Tuple(
+      ...mid(),
+      userAPI.middleware,
+      productAPI.middleware,
+      orderApi.middleware,
+      dashboardApi.middleware
+    ),
 });
 
 export type RootState = ReturnType<typeof store.getState>;
